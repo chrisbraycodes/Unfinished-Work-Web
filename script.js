@@ -204,7 +204,7 @@ Best regards,
 ${name}`;
 
             // Open email client with pre-filled content
-            const mailtoLink = `mailto:support@unfinishedwork.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            const mailtoLink = `mailto:support@unfinished-work.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             window.open(mailtoLink);
             
             // Show success message
@@ -405,7 +405,7 @@ ${description}
 Sent from Unfinished-Work Support Page`;
 
     // Open email client
-    const mailtoLink = `mailto:support@unfinishedwork.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:support@unfinished-work.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.open(mailtoLink);
     
     // Show success message

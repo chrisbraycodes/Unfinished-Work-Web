@@ -169,7 +169,7 @@ To use a custom domain (e.g., `unfinishedwork.com`):
 ## 📞 Support
 
 For questions about the website or app:
-- **Email**: support@unfinishedwork.com
+- **Email**: support@unfinished-work.com
 - **Website**: Visit the support page for detailed help
 - **Beta Access**: Use the beta request form on the homepage
 

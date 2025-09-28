@@ -188,8 +188,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const message = formData.get('message');
             
             // Create email content
-            const subject = 'Beta Access Request - Unfinished Work';
-            const body = `Hi Unfinished Work team,
+            const subject = 'Beta Access Request - Unfinished-Work';
+            const body = `Hi Unfinished-Work team,
 
 I'd like to request beta access to your app.
 
@@ -198,7 +198,7 @@ Email: ${email}
 Project Type: ${projectType || 'Not specified'}
 Message: ${message || 'No additional message'}
 
-I'm excited to try Unfinished Work and help shape the future of AI-powered project collaboration!
+I'm excited to try Unfinished-Work and help shape the future of AI-powered project collaboration!
 
 Best regards,
 ${name}`;
@@ -402,7 +402,7 @@ Description:
 ${description}
 
 ---
-Sent from Unfinished Work Support Page`;
+Sent from Unfinished-Work Support Page`;
 
     // Open email client
     const mailtoLink = `mailto:support@unfinishedwork.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -422,7 +422,7 @@ function showFeedbackSuccess() {
         <div class="success-content">
             <div class="success-icon">✅</div>
             <h4>Feedback Submitted!</h4>
-            <p>Thank you for helping improve Unfinished Work! We've opened your email app with a pre-filled message. Just hit send and we'll review your feedback.</p>
+            <p>Thank you for helping improve Unfinished-Work! We've opened your email app with a pre-filled message. Just hit send and we'll review your feedback.</p>
             <button class="success-close">Got it!</button>
         </div>
     `;

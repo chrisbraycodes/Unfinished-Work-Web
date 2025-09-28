@@ -1,6 +1,6 @@
-# Unfinished Work Website
+# Unfinished-Work Website
 
-Official marketing and support website for Unfinished Work - an AI-powered social platform for creators.
+Official marketing and support website for Unfinished-Work - an AI-powered social platform for creators.
 
 ## 🚀 Features
 
@@ -175,7 +175,7 @@ For questions about the website or app:
 
 ## 📄 License
 
-© 2025 Unfinished Work. All rights reserved.
+© 2025 Unfinished-Work. All rights reserved.
 
 ---
 

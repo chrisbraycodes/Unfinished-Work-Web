@@ -9,7 +9,7 @@ Official marketing and support website for Unfinished-Work - an AI-powered socia
 - **User Discovery**: Search and follow creators by name, username, or business
 - **Face ID Security**: Biometric authentication for app access
 - **Dark Mode**: Automatic theme detection with manual toggle
-- **Subscription System**: Free (5 AI interactions), Pro ($8/month), Yearly ($96/year), Lifetime ($300)
+- **Subscription System**: Free (5 AI interactions), Pro ($14.99/month), Yearly ($139.99/year), Lifetime ($399.99)
 
 ## 📱 App Information
 

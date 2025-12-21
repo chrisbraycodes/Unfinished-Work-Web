@@ -1,0 +1,13 @@
+{
+  "name": "unfinished-work-web",
+  "version": "1.0.0",
+  "description": "Unfinished-Work marketing website",
+  "engines": {
+    "node": ">=20.18.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "build": "echo 'Static site - no build needed'"
+  }
+}
+

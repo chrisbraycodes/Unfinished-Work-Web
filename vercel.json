@@ -14,7 +14,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "frame-ancestors 'self' https://chrisbraycodes.com https://www.chrisbraycodes.com http://chrisbraycodes.com http://www.chrisbraycodes.com http://localhost:* https://localhost:*;"
+          "value": "frame-ancestors *;"
         },
         {
           "key": "X-XSS-Protection",

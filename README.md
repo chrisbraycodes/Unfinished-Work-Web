@@ -1,23 +1,33 @@
 # Unfinished-Work Website
 
-Official marketing and support website for Unfinished-Work - an AI-powered social platform for creators.
+Official marketing and support website for Unfinished-Work - a social platform for DIY creators. This is a static marketing website that provides information about the app, pricing, features, and support resources.
 
 ## 🚀 Features
 
-- **7 AI Modes**: Daily Coach, Project Critic, Research Assistant, Health Score, Risk Analysis, Timeline Prediction, and Priority Matrix
-- **Social Feed**: Follow creators and see AI-recommended content
+- **10+ AI Modes**: Daily Coach, Project Critic, Research Assistant, Health Score, Risk Assessment, Timeline Prediction, Priority Matrix, AI Chat, AI Visual Generation, and Voice AI
+- **AI Chat**: Conversational AI assistant that remembers your conversations and knows about your projects. Talk naturally to create projects, generate tasks, get feedback, and plan your work.
+- **AI Visual Generation**: Generate project logos, banners, thumbnails, and mood boards using DALL-E 3 integration
+- **Voice AI**: Voice-to-text AI integration for hands-free project planning
+- **Social Feed**: Follow creators and see AI-recommended content from their public posts
 - **User Discovery**: Search and follow creators by name, username, or business
-- **Face ID Security**: Biometric authentication for app access
+- **Public & Private Posts**: Share your work publicly with the community or keep posts private - you control your privacy
+- **Social Network**: Build your network of creators, see public project updates, and get inspired by the community
+- **Secure Authentication**: Industry-standard authentication for app access
 - **Dark Mode**: Automatic theme detection with manual toggle
-- **Subscription System**: Free (5 AI interactions), Pro ($14.99/month), Yearly ($139.99/year), Lifetime ($399.99)
+- **Token-Based Pricing**: Flexible token system - use tokens for AI requests or image generation
 
 ## 📱 App Information
 
 - **Platform**: iOS (Android & Web coming soon)
-- **Authentication**: Face ID/Touch ID
+- **Authentication**: Secure authentication (Google, GitHub, Email)
 - **Backend**: Firebase (Auth, Firestore, Storage, Functions)
-- **AI Integration**: OpenAI API for personalized insights
-- **Pricing**: Free tier with 5 AI interactions/month, Pro for unlimited access
+- **AI Integration**: OpenAI API (GPT-4o, GPT-4o-mini, DALL-E 3, Whisper) for personalized insights
+- **Pricing**: Token-based system
+  - **Free**: 100 tokens/month (100 AI requests), no image generation
+  - **Pro**: $9.99/month ($99.99/year) - 800 tokens/month (~100 images OR 800 AI requests)
+  - **Pro+**: $19.99/month ($199.99/year) - 1,500 tokens/month (~187 images OR 1,500 AI requests)
+  - **Ultra**: $39.99/month ($399.99/year) - 3,000 tokens/month (~375 images OR 3,000 AI requests)
+  - **Yearly Plans**: Save 17% on all tiers (Pro: Save $20/year, Pro+: Save $40/year, Ultra: Save $80/year)
 
 ## 🌐 Website Pages
 
@@ -43,13 +53,17 @@ Official marketing and support website for Unfinished-Work - an AI-powered socia
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/unfinished-work-website.git
+   git clone https://github.com/chrisbraycodes/unfinished-work-website.git
    cd unfinished-work-website
    ```
 
 2. Start the local server:
    ```bash
+   # Using Python
    python3 -m http.server 8000
+   
+   # Or using Node.js (if you have http-server installed)
+   npx http-server -p 8000
    ```
 
 3. Open your browser and visit:
@@ -64,12 +78,13 @@ To test on mobile devices on the same network:
 2. Visit `http://[YOUR_IP]:8000` on your mobile device
 3. Test responsive design and touch interactions
 
-## 🎯 Key Features
+## 🎯 Website Features
 
 ### Beta Access System
 - **Email Integration**: Uses `mailto:` protocol to open user's email client
 - **Pre-filled Templates**: Professional email templates for beta requests
 - **Form Validation**: Client-side validation for required fields
+- **Success Messages**: User-friendly confirmation after form submission
 
 ### Dark Mode
 - **Automatic Detection**: Uses `prefers-color-scheme` media query
@@ -116,14 +131,20 @@ To test on mobile devices on the same network:
 
 ### File Structure
 ```
-├── index.html          # Main homepage
-├── privacy.html        # Privacy policy
-├── support.html        # Support page
-├── terms.html          # Terms of service
-├── styles.css          # Main stylesheet
-├── script.js           # JavaScript functionality
-├── favicon.svg         # App logo favicon
-└── README.md           # This file
+├── index.html              # Main homepage with features, pricing, and download
+├── privacy.html            # Privacy policy (GDPR/COPPA compliant)
+├── support.html            # Support page with troubleshooting and contact forms
+├── terms.html              # Terms of service with pricing details
+├── styles.css              # Main stylesheet with dark mode support
+├── script.js               # JavaScript functionality (modals, forms, dark mode)
+├── favicon.svg             # App logo favicon
+├── vercel.json             # Vercel deployment configuration
+├── package.json            # Node.js dependencies (minimal, static site)
+├── package-lock.json       # Dependency lock file
+├── .nvmrc                  # Node version specification
+├── websearch-optimized.jpg # Open Graph image for social sharing
+├── websearch.png           # Social sharing image
+└── README.md               # This file
 ```
 
 ### CSS Architecture
@@ -133,45 +154,74 @@ To test on mobile devices on the same network:
 - **Dark Mode**: Comprehensive dark theme support
 
 ### JavaScript Features
-- **Modal System**: Beta access and success modals
-- **Form Handling**: Email integration and validation
-- **Theme Toggle**: Dark/light mode switching
-- **Responsive Navigation**: Mobile menu functionality
-- **Dynamic Copyright**: Auto-updating copyright year
+- **Modal System**: Beta access and success message modals
+- **Form Handling**: Email integration with pre-filled templates and validation
+- **Theme Toggle**: Dark/light mode switching with localStorage persistence
+- **Responsive Navigation**: Mobile menu with smooth animations
+- **FAQ Accordion**: Expandable FAQ sections
+- **Smooth Scrolling**: Navigation links with offset for fixed navbar
+- **Dynamic Copyright**: Auto-updating copyright year (minimum 2025)
+- **Intersection Observer**: Scroll-triggered animations for feature cards
 
 ## 📱 App Store Compliance
 
-This website is designed to meet Apple's requirements for beta app approval:
+This website is designed to meet Apple's requirements for App Store approval:
 
-- ✅ **Privacy Policy**: Comprehensive and legally compliant
-- ✅ **Support Page**: Beta testing guidelines and feedback forms
-- ✅ **Contact Information**: Multiple ways to reach support
+- ✅ **Privacy Policy**: Comprehensive and legally compliant (GDPR, COPPA)
+- ✅ **Support Page**: Beta testing guidelines, troubleshooting, and feedback forms
+- ✅ **Terms of Service**: Complete terms with accurate pricing and subscription details
+- ✅ **Contact Information**: Multiple ways to reach support (email, forms)
 - ✅ **Accurate Descriptions**: Features match actual app implementation
 - ✅ **Professional Design**: Clean, modern, and trustworthy appearance
+- ✅ **Token-Based Pricing**: Clearly explained pricing system with all tiers
+- ✅ **AI Features**: Accurate descriptions of AI capabilities without proprietary details
 
 ## 🚀 Deployment
 
 ### Static Hosting
 This is a static website that can be deployed to any static hosting service:
 
-- **Netlify**: Drag and drop deployment
-- **Vercel**: Git-based deployment
+- **Vercel** (Recommended): Git-based deployment with `vercel.json` configuration
+  ```bash
+  vercel deploy
+  ```
+- **Netlify**: Drag and drop deployment or Git integration
 - **GitHub Pages**: Free hosting for public repositories
-- **AWS S3**: Scalable static hosting
+- **AWS S3 + CloudFront**: Scalable static hosting
 - **Firebase Hosting**: Google's hosting platform
+
+### Vercel Configuration
+The `vercel.json` file includes:
+- Security headers (X-Content-Type-Options, X-Frame-Options, X-XSS-Protection)
+- Referrer policy settings
+- Output directory configuration
 
 ### Custom Domain
 To use a custom domain (e.g., `unfinishedwork.com`):
-1. Update the domain in the HTML files
+1. Update the domain in the HTML meta tags and links
 2. Configure DNS settings with your hosting provider
-3. Set up SSL certificate for HTTPS
+3. Set up SSL certificate for HTTPS (automatic with Vercel/Netlify)
 
 ## 📞 Support
 
 For questions about the website or app:
 - **Email**: support@unfinished-work.com
-- **Website**: Visit the support page for detailed help
+- **Privacy Inquiries**: privacy@unfinished-work.com
+- **Website**: Visit the support page (`support.html`) for detailed help
 - **Beta Access**: Use the beta request form on the homepage
+- **Support Hours**: Monday - Friday, 9:00 AM - 6:00 PM PST
+
+## 🔄 Recent Updates
+
+### Current Website State (2025)
+- ✅ Updated to reflect current app features (10+ AI modes)
+- ✅ Accurate token-based pricing (Free, Pro, Pro+, Ultra)
+- ✅ AI Chat descriptions focused on user capabilities
+- ✅ Voice AI and AI Visual Generation features documented
+- ✅ Removed proprietary implementation details
+- ✅ All pricing tiers accurately reflected across all pages
+- ✅ Support page includes AI Chat usage instructions
+- ✅ Privacy policy updated with AI Chat, Voice AI, and Visual Generation
 
 ## 📄 License
 
@@ -180,3 +230,15 @@ For questions about the website or app:
 ---
 
 **Built for Apple App Store compliance and user onboarding** 🍎✨
+
+---
+
+## 📝 Notes
+
+- This is a **static marketing website** - no backend or database required
+- All forms use `mailto:` protocol to open the user's email client (no server-side processing)
+- Dark mode preference is stored in localStorage
+- The website is optimized for mobile-first responsive design
+- All AI feature descriptions focus on user capabilities, not proprietary implementation details
+- Pricing information is synchronized across all pages (index, terms, support)
+- The website serves as the primary marketing and support resource for the iOS app

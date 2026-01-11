@@ -71,8 +71,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Navbar Background on Scroll
-window.addEventListener('scroll', function() {
+function updateNavbarStyle() {
     const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+    
     const currentTheme = document.documentElement.getAttribute('data-theme');
     
     if (window.scrollY > 50) {
@@ -92,7 +94,9 @@ window.addEventListener('scroll', function() {
             navbar.style.boxShadow = 'none';
         }
     }
-});
+}
+
+window.addEventListener('scroll', updateNavbarStyle);
 
 // Intersection Observer for Animations
 document.addEventListener('DOMContentLoaded', function() {
@@ -136,6 +140,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.documentElement.setAttribute('data-theme', 'light');
     }
     
+    // Initialize navbar style after theme is set
+    setTimeout(() => updateNavbarStyle(), 0);
+    
     // Toggle dark mode
     if (darkModeToggle) {
         darkModeToggle.addEventListener('click', function() {
@@ -144,6 +151,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             document.documentElement.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
+            
+            // Update navbar style when theme changes
+            updateNavbarStyle();
         });
     }
     
@@ -152,6 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!localStorage.getItem('theme')) {
             const newTheme = e.matches ? 'dark' : 'light';
             document.documentElement.setAttribute('data-theme', newTheme);
+            updateNavbarStyle();
         }
     });
 });
@@ -170,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (this.classList.contains('download-button') || this.textContent.includes('Download')) {
                 openModal();
-            } else if (this.textContent.includes('Pro') || this.textContent.includes('Lifetime')) {
+            } else if (this.textContent.includes('Pro') || this.textContent.includes('Ultra')) {
                 openModal();
             }
         });
